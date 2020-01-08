@@ -1,16 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Program.fs" />
+    <Compile Include="repl.fs" />
+    <Compile Include="Ast.fs" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Lisp\Lisp.fsproj" />
+    <PackageReference Include="Mono.Terminal" Version="5.4.0" />
   </ItemGroup>
 
 </Project>
